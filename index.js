@@ -33,21 +33,18 @@ let cScore = document.querySelector('.computer-score p');
          for(let i = 0; i < options.length; i++){
              options[i].addEventListener('click', function(){
              let random = Math.floor(Math.random() * 3);
-        console.log(playerHand);
               hands.forEach((hand) => {
                 if(hand.classList.contains('player-hand')){
                   hand.style.animation = 'shakePlayer 2s ease';
                 }else{
                   hand.style.animation = 'shakeComputer 2s ease';
                 }
-
                 hand.addEventListener('animationstart',function(){
                   playerHand.src = 'img/rock.png';
                   computerHand.src = 'img/rock.png';
                 });
                 hand.addEventListener('animationend',function(){
-                  playerHand.style.animation = '';
-                  computerHand.style.animation = '';
+                  hand.style.animation = '';
                   });
               });
 
