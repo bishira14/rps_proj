@@ -45,6 +45,9 @@ color:white;
   align-items: center;
   transition: all 2s ease;
 }
+.hands{
+  margin:25px;
+}
 .player-hand{
   transform: rotateY(180deg);
 }
