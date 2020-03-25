@@ -31,6 +31,7 @@ color:white;
   font-size: 1.5rem;
   outline:none;
   cursor:pointer;
+  padding:5px 10px;
 }
 
 .intro button:hover{
