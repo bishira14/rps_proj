@@ -17,7 +17,7 @@ let cScore = document.querySelector('.computer-score p');
       theMatch.classList.remove('fadeout');
       theMatch.classList.add('fadeIn');
       console.log('hello');
-    })
+    });
 
   }
 
